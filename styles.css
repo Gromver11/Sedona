@@ -48,3 +48,71 @@
 
 .menu__item:first-child {
   border-top: none; }
+
+.menu__cross {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  outline: none;
+  top: 5px;
+  right: 12px;
+  background-image: url("img/cross.png");
+  background-position: 50% 50%; }
+
+.menu__link:hover {
+  text-decoration: underline; }
+
+.page-header__menu {
+  position: relative; }
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden; }
+
+.search__question {
+  font-size: 21px;
+  font-family: PTSans, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 26px;
+  color: #000000; }
+
+.search__text {
+  font-size: 14px;
+  font-family: PTSans, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  color: #696969; }
+
+.search__btn {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 280px;
+  background-color: #81b3d2;
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-size: 21px;
+  font-weight: bold;
+  font-family: PTSans, Arial, sans-serif;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto; }

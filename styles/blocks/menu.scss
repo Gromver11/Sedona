@@ -28,4 +28,21 @@
     &__item:first-child {
         border-top:none;
     }
+    &__cross {
+        width:32px;
+        height:32px;
+        position: absolute;
+        cursor: pointer;
+        border:0;
+        background-color:transparent;
+        background-repeat: no-repeat;
+        outline: none;
+        top:5px;
+        right:12px;
+        background-image: url("img/cross.png");
+        background-position: 50% 50%;
+    }
+    &__link:hover {
+        text-decoration: underline;
+    }
 }

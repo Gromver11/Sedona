@@ -1,0 +1,45 @@
+.search {
+    &__question {
+        font: {
+            size: 21px;
+            family: $general-font;
+            weight: bold;
+        }
+        text-transform: uppercase;
+        line-height:1.2;
+        text-align: center;
+        margin-bottom:26px;
+        color:$black;
+    }
+    &__text {
+        font: {
+            size: 14px;
+            family: $general-font;
+        }
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.7;
+        margin-bottom: 40px;
+        color:$tc;
+    }
+    &__btn {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 280px;
+        background-color: $blue;
+        display: block;
+        text-align: center;
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+        line-height: 1.2;
+        font: {
+            size: 21px;
+            weight: bold;
+            family: $general-font;
+        }
+        margin-bottom:48px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
