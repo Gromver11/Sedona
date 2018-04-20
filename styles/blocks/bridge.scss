@@ -1,0 +1,29 @@
+.bridge {
+    &__title {
+        font: {
+            size: 18px;
+            family: $general-font;
+            weight: bold;
+        }
+        line-height: 1.4;
+        text-transform: uppercase;
+        margin-bottom:16px;
+    }
+    &__content {
+        font: {
+            size: 14px;
+            family: $general-font;
+        }
+        line-height: 1.5;
+        text-transform: uppercase;
+        margin-top: 20px;
+    }
+    &__text {
+        background-color: $blue;
+        text-align: center;
+        padding: 34px 20px;
+    }
+    &__img {
+        vertical-align: top;
+    }
+}

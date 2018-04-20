@@ -1,0 +1,14 @@
+.copyright {
+    &__text {
+        display: inline-block;
+        font: {
+            size: 14px;
+            family: $general-font;
+        }
+        line-height: 1.9;
+        text-transform: uppercase;
+    }
+    &__img {
+        margin-left: 10px;
+    }
+}

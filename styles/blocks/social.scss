@@ -1,0 +1,22 @@
+.social {
+    &__btn {
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        background-color: $blue;
+        text-decoration: none;
+        font-size: 0;
+        margin-right: 6px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    &__btn--youtube {
+        background-image: url("img/youtube.svg");
+    }
+    &__btn--tw {
+        background-image: url("img/icon-twitter.svg");
+    }
+    &__btn--fb {
+        background-image: url("img/icon-facebook.svg");
+    }
+}

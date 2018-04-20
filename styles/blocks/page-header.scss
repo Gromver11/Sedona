@@ -1,5 +1,21 @@
 .page-header {
-    &__menu{
+    &__menu {
         position: relative;
+    }
+    &__menu::before,
+    &__menu::after {
+        content: "";
+        position: absolute;
+        width: 35px;
+        height: 5px;
+        right: 10px;
+        top: 18px;
+        background-color: $white;
+    }
+    &__menu::after {
+        transform: rotate(-45deg);
+    }
+    &__menu::before {
+        transform: rotate(45deg);
     }
 }
