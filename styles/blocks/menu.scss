@@ -42,4 +42,15 @@
     &__link:hover {
         text-decoration: underline;
     }
+    &__burger {
+        width: 23px;
+        height: 21px;
+        position: absolute;
+        cursor: pointer;
+        border: 0;
+        background-color: transparent;
+        outline: none;
+        right: 12px;
+        bottom: -37px;
+    }
 }

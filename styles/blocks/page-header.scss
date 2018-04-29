@@ -1,6 +1,7 @@
 .page-header {
     &__menu {
         position: relative;
+        margin-bottom: 55px;
     }
     &__menu::before,
     &__menu::after {
@@ -17,5 +18,8 @@
     }
     &__menu::before {
         transform: rotate(45deg);
+    }
+    &__logo {
+        position: relative;
     }
 }

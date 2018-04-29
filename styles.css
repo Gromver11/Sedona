@@ -4,18 +4,18 @@
 
 @font-face {
   font-family: 'PTSans';
-  src: url("../fonts/PTSansRegular.woff2") format("woff2");
+  src: url("fonts/PTSansRegular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'PTSans';
-  src: url("../fonts/PTSansBold.woff2") format("woff2");
+  src: url("fonts/PTSansBold.woff2") format("woff2");
   font-weight: bold; }
 
 @font-face {
   font-family: 'PTSans';
-  src: url("../fonts/PTSansItalic.woff2") format("woff2");
+  src: url("fonts/PTSansItalic.woff2") format("woff2");
   font-style: italic; }
 
 .container {
@@ -63,8 +63,20 @@
 .menu__link:hover {
   text-decoration: underline; }
 
+.menu__burger {
+  width: 23px;
+  height: 21px;
+  position: absolute;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  right: 12px;
+  bottom: -37px; }
+
 .page-header__menu {
-  position: relative; }
+  position: relative;
+  margin-bottom: 55px; }
 
 .page-header__menu::before, .page-header__menu::after {
   content: "";
@@ -80,6 +92,9 @@
 
 .page-header__menu::before {
   transform: rotate(45deg); }
+
+.page-header__logo {
+  position: relative; }
 
 .visually-hidden {
   position: absolute !important;
@@ -109,8 +124,7 @@
   text-align: center;
   line-height: 1.7;
   margin-bottom: 40px;
-  color: #696969;
-  padding: 0 20px; }
+  color: #696969; }
 
 .search__btn {
   padding-top: 15px;
@@ -151,6 +165,9 @@
 
 .main-content__map {
   margin-bottom: 40px; }
+
+.main-content__search {
+  padding: 0 20px; }
 
 .social__btn {
   display: inline-block;
@@ -211,3 +228,180 @@
 .advantage__number {
   display: block;
   text-align: center; }
+
+.advantage__square {
+  background-color: #eeeeee;
+  color: #696969;
+  padding: 0 20px; }
+
+.advantage__road {
+  background-color: #eeeeee;
+  color: #696969;
+  padding: 0 20px; }
+
+.advantage__tourist {
+  background-color: #eeeeee;
+  color: #696969;
+  padding: 0 20px;
+  margin-bottom: 28px; }
+
+.square__title {
+  font-family: PTSans, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #000000;
+  text-transform: uppercase;
+  padding-top: 31px;
+  margin-bottom: 10px;
+  text-align: center; }
+
+.square__text {
+  font-family: PTSans, Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-bottom: 32px;
+  margin-top: 25px;
+  border-bottom: 1px solid #d6d6d6;
+  text-align: center;
+  line-height: 1.5; }
+
+.road__title {
+  font-family: PTSans, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #000000;
+  text-transform: uppercase;
+  padding-top: 30px;
+  margin-bottom: 18px;
+  text-align: center; }
+
+.road__text {
+  font-family: PTSans, Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  margin-top: 23px;
+  border-bottom: 1px solid #d6d6d6;
+  text-align: center;
+  line-height: 1.5; }
+
+.tourist__title {
+  font-family: PTSans, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #000000;
+  text-transform: uppercase;
+  padding-top: 31px;
+  margin-bottom: 10px;
+  text-align: center; }
+
+.tourist__text {
+  font-family: PTSans, Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-bottom: 32px;
+  margin-top: 25px;
+  text-align: center;
+  line-height: 1.5; }
+
+.burger__line {
+  width: 23px;
+  height: 4px;
+  display: block;
+  background-color: #81b3d2; }
+
+.burger__line::before, .burger__line::after {
+  position: absolute;
+  content: "";
+  width: 23px;
+  height: 4px;
+  background-color: #81b3d2; }
+
+.burger__line::before {
+  top: 2px;
+  left: 0; }
+
+.burger__line::after {
+  top: 16px;
+  left: 0; }
+
+.intro__description--main {
+  font-size: 18px;
+  font-family: PTSans, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #000000;
+  margin-bottom: 40px; }
+
+.intro__description {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 45px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.intro__description--additional {
+  font-size: 14px;
+  font-family: PTSans, Arial, sans-serif;
+  line-height: 1.9;
+  color: #696969; }
+
+.intro__title {
+  background-image: url("img/text-index.svg"), url("img/back-mobile.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 50% 50%;
+  min-height: 389px; }
+
+.city__title {
+  font-size: 18px;
+  font-family: PTSans, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin-bottom: 16px; }
+
+.city__content {
+  font-size: 14px;
+  font-family: PTSans, Arial, sans-serif;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-top: 20px; }
+
+.city__text {
+  background-color: #81b3d2;
+  text-align: center;
+  padding: 34px 20px;
+  color: #ffffff; }
+
+.city__img {
+  vertical-align: top; }
+
+.perspective__icon {
+  float: left;
+  margin-right: 50px; }
+
+.logo__img {
+  position: absolute;
+  bottom: -28px;
+  left: 33%; }
+
+.title__slogan {
+  display: block; }
+
+.title__city-name {
+  display: block;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: PTSans, Arial, sans-serif;
+  font-weight: bold;
+  margin: 27px 0px;
+  letter-spacing: 17px; }
+
+.title__text {
+  padding: 56px 20px;
+  text-align: center;
+  opacity: 0; }

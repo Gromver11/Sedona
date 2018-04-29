@@ -6,4 +6,21 @@
         display: block;
         text-align: center;
     }
+    &__square {
+        background-color: $adb;
+        color: $tc;
+        padding:0 20px;
+    }
+    &__road {
+        background-color: $adb;
+        color: $tc;
+        padding:0 20px;
+    }
+    &__tourist {
+        background-color: $adb;
+        color: $tc;
+        padding:0 20px;
+        margin-bottom: 28px;
+    }
+    
 }

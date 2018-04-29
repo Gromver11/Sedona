@@ -1,0 +1,34 @@
+.intro {
+    &__description--main {
+        font: {
+            size: 18px;
+            family: $general-font;
+            weight: bold;
+        }
+        line-height:1.4;
+        color: $black;
+        margin-bottom:40px;
+    }
+    &__description {
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 45px;
+        padding-bottom: 30px;
+        padding-left:20px;
+        padding-right:20px;
+    }
+    &__description--additional {
+        font: {
+            size: 14px;
+            family: $general-font;
+        }
+        line-height: 1.9;
+        color: $tc;
+    }
+    &__title {
+        background-image: url("img/text-index.svg"), url("img/back-mobile.jpg");
+        background-repeat: no-repeat, no-repeat;
+        background-position: 50% 50%;
+        min-height: 389px;
+    }
+}

@@ -1,0 +1,22 @@
+.title {
+    &__slogan {
+        display: block;
+    }
+    &__city-name {
+        display: block;
+        text-transform: uppercase;
+        font: {
+            size: 50px;
+            family: $general-font;
+            weight: bold;
+        }
+        margin:27px 0px;
+        letter-spacing: 17px;
+
+    }
+    &__text {
+        padding: 56px 20px;
+        text-align: center;
+        opacity: 0;
+    }
+}

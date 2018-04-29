@@ -1,0 +1,26 @@
+.tourist {
+    &__title {
+        font: {
+            family: $general-font;
+            size: 18px;
+            weight: bold;
+        }
+        line-height: 1.4;
+        color: $black;
+        text-transform: uppercase;
+        padding-top: 31px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    &__text {
+        font: {
+            family: $general-font;
+            size: 14px;
+        }
+        text-transform: uppercase;
+        padding-bottom: 32px;
+        margin-top: 25px;
+        text-align: center;
+        line-height: 1.5;
+    }
+}

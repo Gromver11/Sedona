@@ -1,0 +1,27 @@
+.road {
+    &__title {
+        font: {
+            family: $general-font;
+            size: 18px;
+            weight: bold;
+        }
+        line-height: 1.4;
+        color: $black;
+        text-transform: uppercase;
+        padding-top: 30px;
+        margin-bottom: 18px;
+        text-align: center;
+    }
+    &__text {
+        font: {
+            family: $general-font;
+            size: 14px;
+        }
+        text-transform: uppercase;
+        padding-bottom: 30px;
+        margin-top: 23px;
+        border-bottom: 1px solid $border;
+        text-align: center;
+        line-height: 1.5;
+    }
+}
