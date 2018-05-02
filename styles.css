@@ -190,7 +190,6 @@
   background-image: url("img/icon-facebook.svg"); }
 
 .copyright__text {
-  display: inline-block;
   font-size: 14px;
   font-family: PTSans, Arial, sans-serif;
   line-height: 1.9;
@@ -380,9 +379,46 @@
 .city__img {
   vertical-align: top; }
 
-.perspective__icon {
-  float: left;
-  margin-right: 50px; }
+.city__perspective {
+  list-style: none;
+  padding-top: 26px;
+  padding-bottom: 63px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.perspective__title {
+  font-size: 18px;
+  font-family: PTSans, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.4;
+  text-transform: uppercase; }
+
+.perspective__text {
+  font-size: 14px;
+  font-family: PTSans, Arial, sans-serif;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-left: 47px; }
+
+.perspective__item {
+  margin-bottom: 26px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.perspective__icon--house {
+  margin-left: 3px;
+  margin-right: 6px; }
+
+.perspective__icon--gift {
+  margin-left: 5px;
+  margin-right: 9px; }
+
+.perspective__icon--food {
+  margin-right: 7px; }
+
+.perspective__item:last-child {
+  margin-bottom: 0; }
 
 .logo__img {
   position: absolute;

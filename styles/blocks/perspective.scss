@@ -1,6 +1,40 @@
 .perspective {
-    &__icon {
-        float: left;
-        margin-right: 50px;
+    &__title {
+        font: {
+            size: 18px;
+            family: $general-font;
+            weight: bold;
+        }
+        line-height: 1.4;
+        text-transform: uppercase;
+    }
+    &__text {
+        font: {
+            size: 14px;
+            family: $general-font;
+        }
+        line-height:1.5;
+        text-transform: uppercase;
+        margin-left: 47px;
+    }
+    &__item {
+        margin-bottom: 26px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__icon--house {
+        margin-left: 3px;
+        margin-right: 6px;
+    }
+    &__icon--gift {
+        margin-left: 5px;
+        margin-right: 9px;
+    }
+    &__icon--food {
+        margin-right: 7px;
+    }
+    &__item:last-child {
+        margin-bottom: 0;
     }
 }
