@@ -1,7 +1,6 @@
 .page-header {
     &__menu {
         position: relative;
-        margin-bottom: 55px;
     }
     &__menu::before,
     &__menu::after {
@@ -21,5 +20,7 @@
     }
     &__logo {
         position: relative;
+        min-height: 55px;
+        box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.20 );
     }
 }
