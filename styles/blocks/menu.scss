@@ -12,19 +12,13 @@
     &__item {
         background-color: $blue;
         text-align: center;
-        padding: 7px 0;
+        padding: 6px 0;
         border-bottom: 1px solid $gray-menu;
         border-top: 1px solid $bm;
     }
     &__link {
         text-decoration: none;
         color: $white;
-    }
-    &__item:last-child {
-        border-bottom: none;
-    }
-    &__item:first-child {
-        border-top: none;
     }
     &__cross {
         width: 32px;
@@ -34,8 +28,8 @@
         border: 0;
         background-color: transparent;
         outline: none;
-        top: 5px;
-        right: 12px;
+        top: 9px;
+        right: 15px;
     }
     &__link:hover {
         text-decoration: underline;
@@ -48,7 +42,7 @@
         border: 0;
         background-color: transparent;
         outline: none;
-        right: 12px;
+        right: 19px;
         bottom: -37px;
     }
 }

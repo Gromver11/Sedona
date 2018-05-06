@@ -5,22 +5,41 @@
     &__number {
         display: block;
         text-align: center;
+        margin-bottom: 18px;
     }
     &__square {
         background-color: $adb;
         color: $tc;
-        padding:0 20px;
+        padding: 0 20px;
     }
     &__road {
         background-color: $adb;
         color: $tc;
-        padding:0 20px;
+        padding: 0 20px;
     }
     &__tourist {
         background-color: $adb;
         color: $tc;
-        padding:0 20px;
-        margin-bottom: 28px;
+        padding: 0 20px;
     }
-    
+    &__city::before,
+    &__city::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-bottom: 12px solid $blue;
+        top: -12px;
+    }
+    &__city::after {
+        border-left: 160px solid transparent;
+        right: 0;
+    }
+    &__city::before {
+        left: 0;
+        border-right: 160px solid transparent;
+    }
+    &__city {
+        position: relative;
+    }
 }

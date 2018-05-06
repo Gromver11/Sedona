@@ -8,9 +8,9 @@
         line-height: 1.4;
         color: $black;
         text-transform: uppercase;
-        padding-top: 31px;
-        margin-bottom: 10px;
+        margin-bottom: 11px;
         text-align: center;
+        padding-top: 28px;
     }
     &__text {
         font: {
@@ -18,10 +18,9 @@
             size: 14px;
         }
         text-transform: uppercase;
-        padding-bottom: 32px;
-        margin-top: 25px;
         border-bottom: 1px solid $border;
         text-align: center;
         line-height: 1.5;
+        padding-bottom: 26px;
     }
 }

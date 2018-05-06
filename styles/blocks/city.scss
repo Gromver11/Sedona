@@ -7,7 +7,7 @@
         }
         line-height: 1.4;
         text-transform: uppercase;
-        margin-bottom:16px;
+        margin-bottom: 10px;
     }
     &__content {
         font: {
@@ -16,12 +16,11 @@
         }
         line-height: 1.5;
         text-transform: uppercase;
-        margin-top: 20px;
     }
     &__text {
         background-color: $blue;
         text-align: center;
-        padding: 34px 20px;
+        padding: 41px 20px;
         color: $white;
     }
     &__img {
@@ -29,9 +28,9 @@
     }
     &__perspective {
         list-style: none;
-        padding-top: 26px;
-        padding-bottom: 63px;
         padding-left: 20px;
-        padding-right: 20px
+        padding-right: 20px;
+        padding-bottom: 52px;
+        padding-top: 26px;
     }
 }

@@ -7,15 +7,12 @@
         }
         line-height:1.4;
         color: $black;
-        margin-bottom:40px;
+        margin-bottom: 29px;
     }
     &__description {
         text-align: center;
         text-transform: uppercase;
-        padding-top: 45px;
-        padding-bottom: 30px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding:40px 20px;
     }
     &__description--additional {
         font: {
@@ -30,5 +27,24 @@
         background-repeat: no-repeat, no-repeat;
         background-position: 50% 50%;
         min-height: 389px;
+        position: relative;
+        z-index: -999;
+    }
+    &__title::before,
+    &__title::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-bottom: 27px solid $white;
+        bottom: 0;
+    }
+    &__title::after {
+        border-left: 160px solid transparent;
+        right: 0;
+    }
+    &__title::before {
+        left: 0;
+        border-right: 160px solid transparent;
     }
 }
