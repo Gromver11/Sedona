@@ -11,11 +11,17 @@
         line-height:1.2;
         color:$black;
         text-transform: uppercase;
-        margin-bottom: 24px;
+        margin-bottom: 40px;
+        @media screen and  (min-width: 768px) {
+            margin-bottom:0;
+        }
     }
     &__social {
         text-align: center;
-        margin-bottom: 37px;
+        margin-bottom: 38px;
+        @media screen and  (min-width: 768px) {
+            margin-bottom:0;
+        }
     }
     &__copyright {
         display: flex;
