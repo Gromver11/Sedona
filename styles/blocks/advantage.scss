@@ -1,26 +1,23 @@
 .advantage {
     &__bridge {
-        color: $white;
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
     }
     &__number {
         display: block;
         text-align: center;
         margin-bottom: 18px;
     }
-    &__square {
-        background-color: $adb;
+    &__component {
         color: $tc;
-        padding: 0 20px;
-    }
-    &__road {
-        background-color: $adb;
-        color: $tc;
-        padding: 0 20px;
-    }
-    &__tourist {
-        background-color: $adb;
-        color: $tc;
-        padding: 0 20px;
+        padding-top: 28px;
+        @media screen and (min-width: 768px) {
+            width:33%;
+            padding-top: 0;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
     }
     &__city::before,
     &__city::after {
@@ -29,7 +26,10 @@
         width: 0;
         height: 0;
         border-bottom: 12px solid $blue;
-        top: -12px;
+        top: -11px;
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
     }
     &__city::after {
         border-left: 160px solid transparent;
@@ -41,5 +41,19 @@
     }
     &__city {
         position: relative;
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+    }
+    &__wrapper {
+        background-color: $adb;
+        padding: 30px 20px;
+        @media screen and (min-width: 768px) {
+            display:flex;
+            padding: 47px 0;
+        }
+    }
+    &__component:first-child {
+        padding-top: 0;
     }
 }

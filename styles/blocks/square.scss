@@ -10,7 +10,10 @@
         text-transform: uppercase;
         margin-bottom: 11px;
         text-align: center;
-        padding-top: 28px;
+        @media screen and (min-width:768px) {
+            font-size: 21px;
+            line-height: 1.2;
+        }
     }
     &__text {
         font: {
@@ -22,5 +25,9 @@
         text-align: center;
         line-height: 1.5;
         padding-bottom: 26px;
+        @media screen and (min-width:768px) {
+            border: none;
+            padding-bottom: 0;
+        }
     }
 }

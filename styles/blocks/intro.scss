@@ -8,11 +8,18 @@
         line-height:1.4;
         color: $black;
         margin-bottom: 29px;
+        @media screen and (min-width: 768px) {
+            font-size: 21px;
+            line-height: 1.2;
+        }
     }
     &__description {
         text-align: center;
         text-transform: uppercase;
-        padding:40px 20px;
+        padding: 40px 20px;
+        @media screen and (min-width: 768px) {
+            padding:50px 60px;
+        }
     }
     &__description--additional {
         font: {
@@ -29,6 +36,12 @@
         min-height: 389px;
         position: relative;
         z-index: -999;
+        @media screen and (min-width: 768px) {
+            background-image: url("img/intro-triangle.svg"), url("img/text-index.svg"), url("img/back-desktop.jpg");
+            background-size: auto, 440px, 768px;
+            min-height: 520px;
+            background-position: bottom, 50% 50%, 0 0;
+        }
     }
     &__title::before,
     &__title::after {
@@ -37,7 +50,10 @@
         width: 0;
         height: 0;
         border-bottom: 27px solid $white;
-        bottom: 0;
+        bottom: -1px;
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
     }
     &__title::after {
         border-left: 160px solid transparent;

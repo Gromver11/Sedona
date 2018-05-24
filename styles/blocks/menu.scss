@@ -85,8 +85,12 @@
         }
     }
     &__item:nth-child(4) {
+        border-bottom: none;
         @media screen and (min-width: 768px) {
             order: 4;
         }
+    }
+    &__item:first-child {
+        border-top: none;
     }
 }

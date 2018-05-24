@@ -10,6 +10,10 @@
         text-align: center;
         margin-bottom: 21px;
         color:$black;
+        @media screen and (min-width:768px) {
+            font-size: 30px;
+            line-height: 0.9;
+        }
     }
     &__text {
         font: {
@@ -21,6 +25,7 @@
         line-height: 1.7;
         margin-bottom: 37px;
         color:$tc;
+        padding:0 20px;
     }
     &__btn {
         padding-top: 16px;
@@ -33,13 +38,17 @@
         text-decoration: none;
         text-transform: uppercase;
         line-height: 1.2;
+        margin-left: auto;
+        margin-right: auto;
         font: {
             size: 21px;
             weight: bold;
             family: $general-font;
         }
-        margin-bottom:48px;
-        margin-left:auto;
-        margin-right:auto;
+        @media screen and (min-width:768px) {
+            width: 455px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }

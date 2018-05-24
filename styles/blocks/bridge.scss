@@ -8,6 +8,10 @@
         line-height: 1.4;
         text-transform: uppercase;
         margin-bottom:11px;
+        @media screen and (min-width: 768px) {
+            font-size: 21px;
+            line-height: 1.2;
+        }
     }
     &__content {
         font: {
@@ -21,8 +25,31 @@
         background-color: $blue;
         text-align: center;
         padding: 38px 20px;
+        color: $white;
+        @media screen and (min-width: 768px) {
+            width:33%;
+            order: 2;
+            padding: 47px 34px;
+            box-sizing: border-box;
+        }
     }
     &__img {
+        font-size: 0;
         vertical-align: top;
+    }
+    &__img--mobile {
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+    &__img--tablet {
+        @media screen and (max-width: 320px) {
+            display:none;
+        }
+        @media screen and (min-width: 768px) {
+            width: 67%;
+            order: 1;
+            overflow: hidden;
+        }
     }
 }

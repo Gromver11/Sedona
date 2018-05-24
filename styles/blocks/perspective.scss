@@ -7,6 +7,9 @@
         }
         line-height: 1.4;
         text-transform: uppercase;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 20px;
+        }
     }
     &__text {
         font: {
@@ -15,13 +18,23 @@
         }
         line-height:1.5;
         text-transform: uppercase;
-        margin-left: 47px;
+        padding-left:50px;
+        @media screen and (min-width:768px) {
+            padding: 0;
+        }
     }
     &__item {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         margin-bottom: 30px;
+        @media screen and (min-width: 768px) {
+            display:block;
+            width: 33%;
+            margin-bottom: 0;
+            padding: 0 48px;
+            text-align: center;
+        }
     }
     &__icon--house {
         margin-left: 3px;
@@ -29,7 +42,7 @@
     }
     &__icon--gift {
         margin-left: 5px;
-        margin-right: 9px;
+        margin-right: 9px
     }
     &__icon--food {
         margin-right: 7px;
@@ -39,5 +52,22 @@
     }
     &__icon {
         vertical-align: top;
+        @media screen and (min-width: 768px) {
+            width: 65px;
+            height: 65px;
+            margin-bottom: 25px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    &__item:nth-child(3) {
+        @media screen and (min-width: 768px) {
+            order: 2;
+        }
+    }
+    &__item:nth-child(2) {
+        @media screen and (min-width: 768px) {
+            order: 3;
+        }
     }
 }
