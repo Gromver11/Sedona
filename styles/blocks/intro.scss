@@ -38,29 +38,32 @@
         z-index: -999;
         @media screen and (min-width: 768px) {
             background-image: url("img/intro-triangle.svg"), url("img/text-index.svg"), url("img/back-desktop.jpg");
-            background-size: auto, 440px, 768px;
+            background-size: auto, 440px, 100%;
             min-height: 520px;
             background-position: bottom, 50% 50%, 0 0;
         }
-    }
-    &__title::before,
-    &__title::after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-bottom: 27px solid $white;
-        bottom: -1px;
-        @media screen and (min-width: 768px) {
-            display: none;
+        @media screen and (min-width:1280px) {
+            background-image: url("img/intro-triangle-d.svg"), url("img/text-index.svg"), url("img/back-d.jpg");
         }
     }
-    &__title::after {
-        border-left: 160px solid transparent;
-        right: 0;
+        &__title::before,
+        &__title::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-bottom: 27px solid $white;
+            bottom: -1px;
+            @media screen and (min-width: 768px) {
+                display: none;
+            }
+        }
+        &__title::after {
+            border-left: 160px solid transparent;
+            right: 0;
+        }
+        &__title::before {
+            left: 0;
+            border-right: 160px solid transparent;
+        }
     }
-    &__title::before {
-        left: 0;
-        border-right: 160px solid transparent;
-    }
-}

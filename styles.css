@@ -506,9 +506,12 @@
   @media screen and (min-width: 768px) {
     .intro__title {
       background-image: url("img/intro-triangle.svg"), url("img/text-index.svg"), url("img/back-desktop.jpg");
-      background-size: auto, 440px, 768px;
+      background-size: auto, 440px, 100%;
       min-height: 520px;
       background-position: bottom, 50% 50%, 0 0; } }
+  @media screen and (min-width: 1280px) {
+    .intro__title {
+      background-image: url("img/intro-triangle-d.svg"), url("img/text-index.svg"), url("img/back-d.jpg"); } }
 
 .intro__title::before, .intro__title::after {
   content: "";
