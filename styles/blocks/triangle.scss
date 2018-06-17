@@ -1,0 +1,27 @@
+.triangle::before,
+.triangle::after {
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        content: "";
+        width: 45.6%;
+        height: 24px;
+        bottom: 12%;
+        background-color: $white;
+    }
+}
+
+.triangle::after {
+    @media screen and (min-width: 768px) {
+        right:4.5%;
+        transform-origin: bottom right;
+        transform: skewY(-7deg);
+    }
+}
+
+.triangle::before {
+    @media screen and (min-width: 768px) {
+        left: 4.4%;
+        transform-origin: bottom left;
+        transform: skewY(7deg);
+    }
+}

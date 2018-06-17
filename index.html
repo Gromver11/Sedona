@@ -34,87 +34,94 @@
                         </picture>
                     </li>
                 </ul>
-                <button class="menu__cross cross">
-                    <span class="visually-hidden">Закрыть</span>
-                </button>
-                <button class="menu__burger burger">
-                    <span class="visually-hidden">Открыть меню</span>
-                    <span class="burger__line"></span>
-                </button>
             </nav>
+            <button class="btn page-header__btn  page-header__btn--cross">
+                <span class="visually-hidden">Закрыть</span>
+            </button>
+            <button class="btn page-header__btn  page-header__btn--burger">
+                <span class="visually-hidden">Открыть меню</span>
+                <span class="btn__line"></span>
+            </button>
         </div>
         <main class="site__main main-content">
             <div class=" main-content__intro intro">
-                <h1 class="intro__title title">
-                    <p class="title__text">Welcome to the gorgeous
-                        <span class="title__city-name">Sedona</span>
-                        <span class="title__slogan">«Because the Grand Canyon sucks!»</span>
+                <h1 class="intro__greeting greeting">
+                    <p class="greeting__text">Welcome to the gorgeous
+                        <span class="greeting__city-name">Sedona</span>
+                        <span class="greeting__slogan">«Because the Grand Canyon sucks!»</span>
                     </p>
                 </h1>
-                <div class="intro__description">
-                    <p class="intro__description--main">Седона&nbsp;&mdash; небольшой городок&nbsp;в&nbsp;Аризоне, заслуживающий&nbsp;большего!</p>
-                    <p class="intro__description--additional">Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем Гранд Каньон!</p>
+                <div class="triangle">
+                    <span class="visually-hidden">углы</span>
+                </div>
+                <div class="intro__description description">
+                    <div class="description__inner">
+                        <p class="intro__description--main">Седона&nbsp;&mdash; небольшой городок&nbsp;в&nbsp;Аризоне, заслуживающий&nbsp;большего!</p>
+                        <p class="intro__description--additional">Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем Гранд Каньон!</p>
+                    </div>
                 </div>
             </div>
-            <div class="main-content__advantage advantage">
-                <section class="advantage__city city">
-                    <div class="city__text">
-                        <h2 class="city__title">Настоящий городок</h2>
-                        <span class="advantage__number">&ndash;&nbsp;&#8470;&nbsp;1&nbsp;&ndash;</span>
-                        <p class="city__content">
+            <div class="main-content__theme theme">
+                <section class="theme__tile tile">
+                    <div class="tile__text">
+                        <h2 class="tile__title">Настоящий городок</h2>
+                        <span class="tile__number">&ndash;&nbsp;&#8470;&nbsp;1&nbsp;&ndash;</span>
+                        <p class="tile__content">
                             Седона не&nbsp;атракцион для туристов, там течет своя жизнь
                         </p>
                     </div>
-                    <img class="city__img city__img--mobile" src="img/city.jpg" alt="city">
-                    <img class="city__img city__img--tablet" src="img/city-tab.jpg" alt="city">
+                    <div class="tile__photo tile__photo--city">
+                        <span class="visually-hidden">Фото города</span>
+                    </div>
                 </section>
-                <ul class="main-content__perspective perspective">
-                    <li class="perspective__item">
-                        <img class="perspective__icon perspective__icon--house" src="img/house.svg" alt="house">
-                        <h3 class="perspective__title">Жилье</h3>
-                        <p class="perspective__text"> Рекомендуем пожить в&nbsp;настоящем мотеле, все как в кино!</p>
+                <ul class="main-content__rubric rubric">
+                    <li class="rubric__item">
+                        <img class="rubric__icon rubric__icon--house" src="img/house.svg" alt="house">
+                        <h3 class="rubric__title">Жилье</h3>
+                        <p class="rubric__text"> Рекомендуем пожить в&nbsp;настоящем мотеле, все как в кино!</p>
                     </li>
-                    <li class="perspective__item">
-                        <img class="perspective__icon perspective__icon--gift" src="img/gift.svg" alt="gift">
-                        <h3 class="perspective__title">Сувениры</h3>
-                        <p class="perspective__text">Не&nbsp;только&nbsp;китайского, но&nbsp;и местного производства!</p>
+                    <li class="rubric__item">
+                        <img class="rubric__icon rubric__icon--gift" src="img/gift.svg" alt="gift">
+                        <h3 class="rubric__title">Сувениры</h3>
+                        <p class="rubric__text">Не&nbsp;только&nbsp;китайского, но&nbsp;и местного производства!</p>
                     </li>
-                    <li class="perspective__item">
-                        <img class="perspective__icon perspective__icon--food" src="img/food.svg" alt="food">
-                        <h3 class="perspective__title">Еда</h3>
-                        <p class="perspective__text">Всегда заказывайте фирменный&nbsp;бургер, вы&nbsp;не разочаруетесь!</p>
+                    <li class="rubric__item">
+                        <img class="rubric__icon rubric__icon--food" src="img/food.svg" alt="food">
+                        <h3 class="rubric__title">Еда</h3>
+                        <p class="rubric__text">Всегда заказывайте фирменный&nbsp;бургер, вы&nbsp;не разочаруетесь!</p>
                     </li>
                 </ul>
-                <section class="advantage__bridge bridge">
-                    <div class="bridge__text">
-                        <h2 class="bridge__title">Там есть мост&nbsp;дьявола</h2>
-                        <span class="advantage__number">&ndash;&nbsp;&#8470;&nbsp;2&nbsp;&ndash;</span>
-                        <p class="bridge__content">
+                <section class="theme__tile tile">
+                    <div class="tile__text tile__text--smaller-spacing tile__text--order">
+                        <h2 class="tile__title">Там есть мост&nbsp;дьявола</h2>
+                        <span class="tile__number">&ndash;&nbsp;&#8470;&nbsp;2&nbsp;&ndash;</span>
+                        <p class="tile__content">
                             Да, по&nbsp;нему можно пройти! Если конечно вы&nbsp;осмелитесь
                         </p>
                     </div>
-                    <img class="bridge__img bridge__img--tablet" alt="bridge" src="img/bridge-tab.jpg">
-                    <img class="bridge__img bridge__img--mobile" alt="bridge" src="img/bridge.jpg">
+                    <div class="tile__photo tile__photo--bridge">
+                        <span class="visually-hidden">Фото моста</span>
+                    </div>
                 </section>
-                <div class="advantage__wrapper">
-                    <section class="advantage__component square">
-                        <h2 class="square__title">Небольшая площадь</h2>
-                        <span class="advantage__number">&ndash;&nbsp;&#8470;&nbsp;3&nbsp;&ndash;</span>
-                        <p class="square__text">
+                <div class="theme__components">
+                    <section class="theme__component component">
+                        <h2 class="component__title">Небольшая площадь</h2>
+                        <span class="tile__number">&ndash;&nbsp;&#8470;&nbsp;3&nbsp;&ndash;</span>
+                        <p class="component__text">
                             Все достопримеча&shy;тельности находятся очень близко
                         </p>
                     </section>
-                    <section class="advantage__component road">
-                        <h2 class="road__title">Красивая дорога</h2>
-                        <span class="advantage__number">&ndash;&nbsp;&#8470;&nbsp;4&nbsp;&ndash;</span>
-                        <p class="road__text">
-                            Ехать в&nbsp;Седону из&nbsp;Лас-&nbsp;Вегаса совсем&nbsp;не&nbsp;скучно!
+                    <section class="theme__component component">
+                        <h2 class="component__title">Красивая дорога</h2>
+                        <span class="tile__number">&ndash;&nbsp;&#8470;&nbsp;4&nbsp;&ndash;</span>
+                        <p class="component__text">
+                            Ехать в&nbsp;Седону из&nbsp;Лас&ndash;&nbsp;Вегаса совсем&nbsp;не&nbsp;скучно!
                         </p>
                     </section>
-                    <section class="advantage__component tourist">
-                        <h2 class="tourist__title">Мало туристов</h2>
-                        <span class="advantage__number">&ndash;&nbsp;&#8470;&nbsp;5&nbsp;&ndash;</span>
-                        <p class="tourist__text">
+                    <section class="theme__component component">
+                        <h2 class="component__title">Мало туристов</h2>
+                        <span class="tile__number">&ndash;&nbsp;&#8470;&nbsp;5&nbsp;&ndash;</span>
+                        <p class="component__text component__text--without-line">
                             Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там
                         </p>
                     </section>
@@ -122,7 +129,9 @@
             </div>
             <div class="main-content__search search">
                 <p class="search__question ">Заинтересовались?</p>
-                <p class="search__text">Укажите предполагаемые даты поездки и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</p>
+                <p class="search__text">Укажите предполагаемые даты поездки
+                    <span class="search__text--new-line">и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</span>
+                </p>
                 <a class="search__btn" href="# ">Найти гостиницу</a>
             </div>
             <div class="main-content__map map">

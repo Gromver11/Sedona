@@ -36,36 +36,8 @@
             color: $black;
         }
     }
-    &__cross {
-        width: 32px;
-        height: 32px;
-        position: absolute;
-        cursor: pointer;
-        border: 0;
-        background-color: transparent;
-        outline: none;
-        top: 9px;
-        right: 15px;
-        @media screen and (min-width: 768px) {
-            display:none;
-        }
-    }
     &__link:hover {
         text-decoration: underline;
-    }
-    &__burger {
-        width: 23px;
-        height: 21px;
-        position: absolute;
-        cursor: pointer;
-        border: 0;
-        background-color: transparent;
-        outline: none;
-        right: 19px;
-        bottom: 19px;
-        @media screen and (min-width: 768px) {
-            display:none;
-        }
     }
     &__item--logo {
         border-top: none;

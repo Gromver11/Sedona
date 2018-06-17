@@ -1,4 +1,4 @@
-.square {
+.component {
     &__title {
         font: {
             family: $general-font;
@@ -7,7 +7,6 @@
         }
         line-height: 1.4;
         color: $black;
-        text-transform: uppercase;
         margin-bottom: 11px;
         text-align: center;
         @media screen and (min-width:768px) {
@@ -18,9 +17,7 @@
     &__text {
         font: {
             family: $general-font;
-            size: 14px;
         }
-        text-transform: uppercase;
         border-bottom: 1px solid $border;
         text-align: center;
         line-height: 1.5;
@@ -29,5 +26,8 @@
             border: none;
             padding-bottom: 0;
         }
+    }
+    &__text--without-line {
+        border-bottom: none;
     }
 }

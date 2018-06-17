@@ -1,0 +1,29 @@
+.theme {
+    &__tile {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            min-height: 257px;
+        }
+    }
+    &__component {
+        color: $tc;
+        padding-top: 28px;
+        @media screen and (min-width: 768px) {
+            width:33%;
+            padding-top: 0;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+    &__components {
+        background-color: $adb;
+        padding: 30px 20px;
+        @media screen and (min-width: 768px) {
+            display:flex;
+            padding: 49px 0;
+        }
+    }
+    &__component:first-child {
+        padding-top: 0;
+    }
+}

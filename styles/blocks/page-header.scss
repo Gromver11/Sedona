@@ -2,23 +2,40 @@
     &__menu {
         position: relative;
     }
-    &__menu::before,
-    &__menu::after {
+    &__btn {
+        position: absolute;
+        right: 15px;
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+    &__btn--cross {
+        width: 32px;
+        height: 32px;
+        top: 9px;
+    }
+    &__btn--cross::before,
+    &__btn--cross::after {
         content: "";
         position: absolute;
         width: 27px;
         height: 5px;
-        right: 18px;
-        top: 24px;
+        right: 3px;
+        top: 13px;
         background-color: $white;
         @media screen and (min-width: 768px) {
             display:none;
         }
     }
-    &__menu::after {
+    &__btn--cross::before {
+        transform: rotate(45deg);
+    }
+    &__btn--cross::after {
         transform: rotate(-45deg);
     }
-    &__menu::before {
-        transform: rotate(45deg);
+    &__btn--burger {
+        width: 23px;
+        height: 23px;
+        top: 233px;
     }
 }

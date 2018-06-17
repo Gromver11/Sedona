@@ -1,0 +1,9 @@
+.description {
+    &__inner {
+        width: 255px;
+        margin: 0 auto;
+        @media screen and (min-width: 768px) {
+            width:488px
+        }
+    }
+}
