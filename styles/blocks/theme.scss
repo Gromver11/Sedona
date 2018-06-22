@@ -2,7 +2,7 @@
     &__tile {
         @media screen and (min-width: 768px) {
             display: flex;
-            min-height: 257px;
+            height: 255px;
         }
     }
     &__component {
@@ -11,16 +11,18 @@
         @media screen and (min-width: 768px) {
             width:33%;
             padding-top: 0;
-            padding-left: 50px;
-            padding-right: 50px;
+            padding-left: 47px;
+            padding-right: 47px;
         }
     }
     &__components {
         background-color: $adb;
         padding: 30px 20px;
+        box-sizing: border-box;
         @media screen and (min-width: 768px) {
             display:flex;
             padding: 49px 0;
+            height:255px;
         }
     }
     &__component:first-child {

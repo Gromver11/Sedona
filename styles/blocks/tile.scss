@@ -6,10 +6,12 @@
             weight: bold;
         }
         line-height: 1.4;
-        margin-bottom: 10px;
         @media screen and (min-width: 768px) {
             font-size: 21px;
             line-height: 1.2;
+            width: 122px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
     &__content {
@@ -21,12 +23,15 @@
     &__text {
         background-color: $blue;
         text-align: center;
-        padding: 41px 20px;
+        padding: 41px 0;
         color: $white;
         @media screen and (min-width: 768px) {
             width:33%;
-            padding: 48px 40px;
+            padding: 48px 0;
             box-sizing: border-box;
+        }
+        @media screen and (min-width:1280px) {
+            padding: 60px 0;
         }
     }
     &__text--smaller-spacing {
@@ -36,36 +41,52 @@
         }
     }
     &__text--order {
-        @media screen and (min-width:768px) {
+        @media screen and (min-width: 768px) {
             order:2;
         }
     }
     &__number {
         display: block;
         text-align: center;
-        margin-bottom: 18px;
+        margin-bottom: 13px;
+        margin-top: 13px;
     }
     &__photo {
         background-repeat: no-repeat;
         background-size: cover;
         min-width: 320px;
-        min-height: 255px;
+        height: 255px;
         @media screen and (min-width: 768px) {
             width:67%;
-            overflow:hidden;
+            overflow: hidden;
         }
     }
     &__photo--city {
         background-image: url("img/city.jpg");
-        min-height: 260px;
         @media screen and (min-width: 768px) {
             background-image: url("img/city-tab.jpg");
+        }
+        @media screen and (min-width:1280px) {
+            background-image: url("img/city-d.jpg");
         }
     }
     &__photo--bridge {
         background-image: url("img/bridge.jpg");
         @media screen and (min-width: 768px) {
             background-image: url("img/bridge-tab.jpg");
+        }
+        @media screen and (min-width:1280px) {
+            background-image: url("img/bridge-d.jpg");
+        }
+    }
+    &__inner {
+        width: 256px;
+        margin: 0 auto;
+        @media screen and (min-width: 768px) {
+            width: 158px;
+        }
+        @media screen and (min-width:1280px) {
+            width: 260px;
         }
     }
 }

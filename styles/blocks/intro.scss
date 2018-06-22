@@ -18,7 +18,7 @@
         padding: 32px 0;
         position: relative;
         @media screen and (min-width: 768px) {
-            padding:50px 60px;
+            padding:50px 0;
         }
     }
     &__description--additional {
@@ -37,8 +37,11 @@
         min-height:388px;
         z-index: -1;
         @media screen and (min-width:768px) {
-            background-image: url("img/text-index-t.svg"), url("img/back-t.jpg");
+            background-image: url("img/text-index-t.png"), url("img/back-t.jpg");
             min-height: 515px;
+        }
+        @media screen and (min-width:1280px) {
+            background-image: url("img/text-index-t.png"), url("img/back-d.jpg");
         }
     }
     &__greeting::before,
@@ -58,11 +61,17 @@
         right: 0;
         transform-origin: bottom right;
         transform: skewY(-7deg);
+        @media screen and (min-width:1280px) {
+            transform: skewY(-3deg);
+        }
     }
     &__greeting::before {
         left: 0;
         transform-origin: bottom left;
         transform: skewY(7deg);
+        @media screen and (min-width:1280px) {
+            transform: skewY(3deg);
+        }
     }
     &__description::before,
     &__description::after {
