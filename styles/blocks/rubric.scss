@@ -29,7 +29,6 @@
             display:block;
             width: 33%;
             margin-bottom: 0;
-            padding: 0 46px;
             text-align: center;
         }
     }
@@ -65,6 +64,15 @@
     &__item:nth-child(2) {
         @media screen and (min-width: 768px) {
             order: 3;
+        }
+    }
+    &__inner {
+        @media screen and (min-width: 768px) {
+            width:165px;
+            margin: 0 auto;
+        }
+        @media screen and (min-width:1280px) {
+            width: 260px;
         }
     }
 }

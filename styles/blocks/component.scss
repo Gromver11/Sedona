@@ -12,6 +12,10 @@
             font-size: 21px;
             line-height: 1.2;
         }
+        @media screen and(min-width:1280px) {
+            width: 150px;
+            margin: 0 auto;
+        }
     }
     &__text {
         font: {
@@ -28,5 +32,19 @@
     }
     &__text--without-line {
         border-bottom: none;
+    }
+    &__inner {
+        @media screen and (min-width: 768px) {
+            width:160px;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 1280px) {
+            width: 260px;
+        }
+    }
+    &__inner--size {
+        @media screen and (min-width: 1280px) {
+            width:170px;
+        }
     }
 }

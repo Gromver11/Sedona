@@ -231,7 +231,7 @@
 
 .main-content__rubric {
   list-style: none;
-  padding: 38px 20px; }
+  padding: 38px 16px; }
   @media screen and (min-width: 768px) {
     .main-content__rubric {
       display: flex;
@@ -344,8 +344,11 @@
   background-color: #ffffff; }
   @media screen and (min-width: 768px) {
     .intro__greeting::before, .intro__greeting::after {
-      height: 35px;
+      height: 37px;
       bottom: 0; } }
+  @media screen and (min-width: 1280px) {
+    .intro__greeting::before, .intro__greeting::after {
+      height: 70px; } }
 
 .intro__greeting::after {
   right: 0;
@@ -353,7 +356,7 @@
   transform: skewY(-7deg); }
   @media screen and (min-width: 1280px) {
     .intro__greeting::after {
-      transform: skewY(-3deg); } }
+      transform: skewY(-8deg); } }
 
 .intro__greeting::before {
   left: 0;
@@ -361,7 +364,7 @@
   transform: skewY(7deg); }
   @media screen and (min-width: 1280px) {
     .intro__greeting::before {
-      transform: skewY(3deg); } }
+      transform: skewY(8deg); } }
 
 .intro__description::before, .intro__description::after {
   position: absolute;
@@ -411,7 +414,6 @@
       display: block;
       width: 33%;
       margin-bottom: 0;
-      padding: 0 46px;
       text-align: center; } }
 
 .rubric__icon--house {
@@ -445,6 +447,15 @@
 @media screen and (min-width: 768px) {
   .rubric__item:nth-child(2) {
     order: 3; } }
+
+@media screen and (min-width: 768px) {
+  .rubric__inner {
+    width: 165px;
+    margin: 0 auto; } }
+
+@media screen and (min-width: 1280px) {
+  .rubric__inner {
+    width: 260px; } }
 
 .greeting__slogan {
   display: block; }
@@ -484,7 +495,7 @@
     .tile__title {
       font-size: 21px;
       line-height: 1.2;
-      width: 122px;
+      width: 150px;
       margin-left: auto;
       margin-right: auto; } }
 
@@ -500,17 +511,10 @@
   @media screen and (min-width: 768px) {
     .tile__text {
       width: 33%;
-      padding: 48px 0;
-      box-sizing: border-box; } }
+      padding: 48px 0; } }
   @media screen and (min-width: 1280px) {
     .tile__text {
       padding: 60px 0; } }
-
-.tile__text--smaller-spacing {
-  padding: 38px 20px; }
-  @media screen and (min-width: 768px) {
-    .tile__text--smaller-spacing {
-      padding: 47px 34px; } }
 
 @media screen and (min-width: 768px) {
   .tile__text--order {
@@ -555,10 +559,14 @@
   margin: 0 auto; }
   @media screen and (min-width: 768px) {
     .tile__inner {
-      width: 158px; } }
+      width: 170px; } }
   @media screen and (min-width: 1280px) {
     .tile__inner {
       width: 260px; } }
+
+@media screen and (min-width: 1280px) {
+  .tile__inner--smaller-width {
+    width: 212px; } }
 
 @media screen and (min-width: 768px) {
   .theme__tile {
@@ -571,9 +579,7 @@
   @media screen and (min-width: 768px) {
     .theme__component {
       width: 33%;
-      padding-top: 0;
-      padding-left: 47px;
-      padding-right: 47px; } }
+      padding-top: 0; } }
 
 .theme__components {
   background-color: #eeeeee;
@@ -599,6 +605,10 @@
     .component__title {
       font-size: 21px;
       line-height: 1.2; } }
+  @media screen and (min-width: 1280px) {
+    .component__title {
+      width: 150px;
+      margin: 0 auto; } }
 
 .component__text {
   font-family: PTSans, Arial, sans-serif;
@@ -614,9 +624,57 @@
 .component__text--without-line {
   border-bottom: none; }
 
+@media screen and (min-width: 768px) {
+  .component__inner {
+    width: 160px;
+    margin: 0 auto; } }
+
+@media screen and (min-width: 1280px) {
+  .component__inner {
+    width: 260px; } }
+
+@media screen and (min-width: 1280px) {
+  .component__inner--size {
+    width: 170px; } }
+
 .description__inner {
   width: 255px;
   margin: 0 auto; }
   @media screen and (min-width: 768px) {
     .description__inner {
       width: 488px; } }
+
+@media screen and (min-width: 768px) {
+  .triangle::before,
+  .triangle::after {
+    position: absolute;
+    content: "";
+    width: 45.5%;
+    height: 24px;
+    bottom: 11%;
+    background-color: #ffffff; } }
+
+@media screen and (min-width: 1280px) {
+  .triangle::before,
+  .triangle::after {
+    height: 30px; } }
+
+@media screen and (min-width: 768px) {
+  .triangle::after {
+    right: 4.6%;
+    transform-origin: bottom right;
+    transform: skewY(-7deg); } }
+
+@media screen and (min-width: 1280px) {
+  .triangle::after {
+    right: 22.5%; } }
+
+@media screen and (min-width: 768px) {
+  .triangle::before {
+    left: 4.5%;
+    transform-origin: bottom left;
+    transform: skewY(7deg); } }
+
+@media screen and (min-width: 1280px) {
+  .triangle::before {
+    left: 22.5%; } }

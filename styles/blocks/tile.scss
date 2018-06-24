@@ -9,7 +9,7 @@
         @media screen and (min-width: 768px) {
             font-size: 21px;
             line-height: 1.2;
-            width: 122px;
+            width: 150px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -28,16 +28,9 @@
         @media screen and (min-width: 768px) {
             width:33%;
             padding: 48px 0;
-            box-sizing: border-box;
         }
         @media screen and (min-width:1280px) {
             padding: 60px 0;
-        }
-    }
-    &__text--smaller-spacing {
-        padding: 38px 20px;
-        @media screen and (min-width: 768px) {
-            padding: 47px 34px;
         }
     }
     &__text--order {
@@ -83,10 +76,15 @@
         width: 256px;
         margin: 0 auto;
         @media screen and (min-width: 768px) {
-            width: 158px;
+            width: 170px;
         }
         @media screen and (min-width:1280px) {
             width: 260px;
+        }
+    }
+    &__inner--smaller-width {
+        @media screen and (min-width:1280px) {
+            width:212px;
         }
     }
 }
