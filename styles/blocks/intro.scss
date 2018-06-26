@@ -29,7 +29,7 @@
         color: $tc;
     }
     &__greeting {
-        background-image: url("img/text-index.svg"), url("img/back-mobile.jpg");
+        background-image: url("img/text.svg"), url("img/back-mobile.jpg");
         background-repeat: no-repeat, no-repeat;
         background-size: auto, cover;
         background-position: 50% 50%, 0 0;
@@ -37,11 +37,11 @@
         min-height:388px;
         z-index: -1;
         @media screen and (min-width:768px) {
-            background-image: url("img/text-index-t.png"), url("img/back-t.jpg");
+            background-image: url("img/text-td.svg"), url("img/back-t.jpg");
             min-height: 515px;
         }
         @media screen and (min-width:1280px) {
-            background-image: url("img/text-index-t.png"), url("img/back-d.jpg");
+            background-image: url("img/text-td.svg"), url("img/back-d.jpg");
         }
     }
     &__greeting::before,

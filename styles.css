@@ -320,7 +320,7 @@
   color: #696969; }
 
 .intro__greeting {
-  background-image: url("img/text-index.svg"), url("img/back-mobile.jpg");
+  background-image: url("img/text.svg"), url("img/back-mobile.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: auto, cover;
   background-position: 50% 50%, 0 0;
@@ -329,11 +329,11 @@
   z-index: -1; }
   @media screen and (min-width: 768px) {
     .intro__greeting {
-      background-image: url("img/text-index-t.png"), url("img/back-t.jpg");
+      background-image: url("img/text-td.svg"), url("img/back-t.jpg");
       min-height: 515px; } }
   @media screen and (min-width: 1280px) {
     .intro__greeting {
-      background-image: url("img/text-index-t.png"), url("img/back-d.jpg"); } }
+      background-image: url("img/text-td.svg"), url("img/back-d.jpg"); } }
 
 .intro__greeting::before, .intro__greeting::after {
   position: absolute;
@@ -418,14 +418,20 @@
 
 .rubric__icon--house {
   margin-left: 3px;
-  margin-right: 6px; }
+  margin-right: 6px;
+  width: 39px;
+  height: 37px; }
 
 .rubric__icon--gift {
   margin-left: 5px;
-  margin-right: 9px; }
+  margin-right: 9px;
+  width: 32px;
+  height: 38px; }
 
 .rubric__icon--food {
-  margin-right: 7px; }
+  margin-right: 7px;
+  width: 38px;
+  height: 40px; }
 
 .rubric__item:last-child {
   margin-bottom: 0; }
