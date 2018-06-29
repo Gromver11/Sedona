@@ -87,4 +87,12 @@
             width:212px;
         }
     }
+    &__text--triangle {
+        position: relative;
+        z-index: 3;
+        padding-top:0;
+        @media screen and (min-width: 768px) {
+            padding-top: 48px;
+        }
+    }
 }

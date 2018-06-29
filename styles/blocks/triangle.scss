@@ -1,36 +1,28 @@
-.triangle::before,
-.triangle::after {
-    @media screen and (min-width: 768px) {
-        position: absolute;
-        content: "";
-        width: 45.5%;
-        height: 24px;
-        bottom: 11%;
-        background-color: $white;
+.triangle {
+    &::before,
+    &::after {
+        @media screen and (min-width: 768px) {
+            width: 45%;
+            height: 190px;
+            position: absolute;
+            content: "";
+            bottom: 0;
+            background: $white;
+            z-index: 3;
+        }
     }
-    @media screen and (min-width: 1280px) {
-        height: 30px;
+    &::before {
+        @media screen and (min-width: 768px) {
+            left: 10%;
+            transform-origin: bottom left;
+            transform: skewY(10deg)
+        }
     }
-}
-
-.triangle::after {
-    @media screen and (min-width: 768px) {
-        right:4.6%;
-        transform-origin: bottom right;
-        transform: skewY(-7deg);
-    }
-    @media screen and (min-width:1280px) {
-        right: 22.5%;
-    }
-}
-
-.triangle::before {
-    @media screen and (min-width: 768px) {
-        left: 4.5%;
-        transform-origin: bottom left;
-        transform: skewY(7deg);
-    }
-    @media screen and (min-width:1280px) {
-        left: 22.5%;
+    &::after {
+        @media screen and (min-width: 768px) {
+            right: 10%;
+            transform-origin: bottom right;
+            transform: skewY(-10deg);
+        }
     }
 }

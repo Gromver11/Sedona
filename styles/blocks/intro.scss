@@ -15,8 +15,9 @@
     }
     &__description {
         text-align: center;
-        padding: 32px 0;
+        padding-bottom: 85px;
         position: relative;
+        z-index: 3;
         @media screen and (min-width: 768px) {
             padding:50px 0;
         }
@@ -33,10 +34,9 @@
         background-repeat: no-repeat, no-repeat;
         background-size: auto, cover;
         background-position: 50% 50%, 0 0;
+        min-height: 388px;
         position: relative;
-        min-height:388px;
-        z-index: -1;
-        @media screen and (min-width:768px) {
+        @media screen and (min-width: 768px) {
             background-image: url("img/text-td.svg"), url("img/back-t.jpg");
             min-height: 515px;
         }
@@ -48,43 +48,34 @@
     &__greeting::after {
         position: absolute;
         content: "";
-        width: 50%;
-        height: 22px;
+        width: 55%;
+        height: 20px;
         bottom: 0;
+        padding: 25px;
         background-color: $white;
-        @media screen and (min-width: 768px) {
-            height: 37px;
-            bottom:0;
-        }
-        @media screen and (min-width: 1280px) {
-            height:70px;
-        }
+        z-index: 2;
     }
     &__greeting::after {
         right: 0;
         transform-origin: bottom right;
         transform: skewY(-7deg);
-        @media screen and (min-width:1280px) {
-            transform: skewY(-8deg);
-        }
     }
     &__greeting::before {
         left: 0;
         transform-origin: bottom left;
         transform: skewY(7deg);
-        @media screen and (min-width:1280px) {
-            transform: skewY(8deg);
-        }
     }
     &__description::before,
     &__description::after {
         position: absolute;
         content: "";
-        width: 50%;
-        height: 22px;
+        width: 55%;
+        height: 20px;
         bottom: 0;
+        padding: 25px;
         background-color: $blue;
-        @media screen and (min-width: 768px) {
+        z-index: 2;
+        @media screen and (min-width:768px) {
             display: none;
         }
     }
@@ -94,7 +85,7 @@
         transform: skewY(-7deg);
     }
     &__description::before {
-        left: 0;
+        left:0;
         transform-origin: bottom left;
         transform: skewY(7deg);
     }
