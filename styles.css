@@ -354,6 +354,9 @@
   background-color: #ffffff;
   padding-bottom: 27px;
   z-index: 2; }
+  @media screen and (min-width: 768px) {
+    .intro__greeting::before, .intro__greeting::after {
+      padding-bottom: 0; } }
 
 .intro__greeting::after {
   right: 0;
@@ -692,8 +695,8 @@
   position: relative; }
   @media screen and (min-width: 768px) {
     .triangle::before, .triangle::after {
-      width: 45%;
-      height: 105px;
+      width: 47%;
+      height: 72px;
       position: absolute;
       content: "";
       bottom: 0;
@@ -701,11 +704,11 @@
       z-index: 3; } }
   @media screen and (min-width: 768px) {
     .triangle::before {
-      left: 6%;
+      left: 4%;
       transform-origin: bottom left;
-      transform: skewY(10deg); } }
+      transform: skewY(7deg); } }
   @media screen and (min-width: 768px) {
     .triangle::after {
-      right: 6%;
+      right: 4%;
       transform-origin: bottom right;
-      transform: skewY(-10deg); } }
+      transform: skewY(-7deg); } }

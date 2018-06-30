@@ -56,6 +56,9 @@
         background-color: $white;
         padding-bottom:27px;
         z-index: 2;
+        @media screen and (min-width:768px) {
+            padding-bottom:0;
+        }
     }
     &__greeting::after {
         right: 0;
