@@ -15,12 +15,12 @@
     }
     &__components {
         background-color: $adb;
-        padding: 30px 20px;
-        box-sizing: border-box;
+        padding-top: 28px;
         @media screen and (min-width: 768px) {
             display:flex;
-            padding: 49px 0;
-            height:255px;
+            padding-top: 47px;
+            box-sizing: border-box;
+            height: 255px;
         }
     }
     &__component:first-child {

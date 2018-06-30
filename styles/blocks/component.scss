@@ -24,19 +24,20 @@
         border-bottom: 1px solid $border;
         text-align: center;
         line-height: 1.5;
-        padding-bottom: 26px;
+        padding-bottom: 27px;
         @media screen and (min-width:768px) {
             border: none;
             padding-bottom: 0;
         }
     }
-    &__text--without-line {
+    &__text--tourist {
         border-bottom: none;
     }
     &__inner {
+        width: 247px;
+        margin: 0 auto;
         @media screen and (min-width: 768px) {
             width:160px;
-            margin: 0 auto;
         }
         @media screen and (min-width: 1280px) {
             width: 260px;

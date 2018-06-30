@@ -15,11 +15,13 @@
     }
     &__description {
         text-align: center;
-        padding-bottom: 85px;
+        padding-top: 40px;
+        padding-bottom:67px;
         position: relative;
         z-index: 3;
         @media screen and (min-width: 768px) {
-            padding:50px 0;
+            padding-top: 62px;
+            padding-bottom:50px;
         }
     }
     &__description--additional {
@@ -38,7 +40,7 @@
         position: relative;
         @media screen and (min-width: 768px) {
             background-image: url("img/text-td.svg"), url("img/back-t.jpg");
-            min-height: 515px;
+            min-height: 510px;
         }
         @media screen and (min-width:1280px) {
             background-image: url("img/text-td.svg"), url("img/back-d.jpg");
@@ -49,30 +51,30 @@
         position: absolute;
         content: "";
         width: 55%;
-        height: 20px;
+        height: 24px;
         bottom: 0;
-        padding: 25px;
         background-color: $white;
+        padding-bottom:27px;
         z-index: 2;
     }
     &__greeting::after {
         right: 0;
         transform-origin: bottom right;
-        transform: skewY(-7deg);
+        transform: skewY(-8deg);
     }
     &__greeting::before {
         left: 0;
         transform-origin: bottom left;
-        transform: skewY(7deg);
+        transform: skewY(8deg);
     }
     &__description::before,
     &__description::after {
         position: absolute;
         content: "";
         width: 55%;
-        height: 20px;
+        height: 24px;
         bottom: 0;
-        padding: 25px;
+        padding-bottom: 29px;
         background-color: $blue;
         z-index: 2;
         @media screen and (min-width:768px) {
@@ -82,11 +84,11 @@
     &__description::after {
         right: 0;
         transform-origin: bottom right;
-        transform: skewY(-7deg);
+        transform: skewY(-8deg);
     }
     &__description::before {
         left:0;
         transform-origin: bottom left;
-        transform: skewY(7deg);
+        transform: skewY(8deg);
     }
 }

@@ -10,6 +10,9 @@
         background-repeat: no-repeat;
         background-position: 50% 50%;
         vertical-align: top;
+        @media screen and (min-width: 768px) {
+            margin-right:0;
+        }
     }
     &__btn--youtube {
         background-image: url("img/youtube.svg");
@@ -19,8 +22,12 @@
     }
     &__btn--fb {
         background-image: url("img/icon-facebook.svg");
+        @media screen and (min-width: 768px) {
+            margin-right: 6px;
+            margin-left: 6px;
+        }
     }
     &__btn:last-child {
-        margin-right:0;
+        margin-right: 0;
     }
 }
