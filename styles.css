@@ -688,24 +688,24 @@
     .description__inner {
       width: 488px; } }
 
-@media screen and (min-width: 768px) {
-  .triangle::before, .triangle::after {
-    width: 45%;
-    height: 173px;
-    position: absolute;
-    content: "";
-    bottom: 0;
-    background: #ffffff;
-    z-index: 3; } }
-
-@media screen and (min-width: 768px) {
-  .triangle::before {
-    left: 6%;
-    transform-origin: bottom left;
-    transform: skewY(10deg); } }
-
-@media screen and (min-width: 768px) {
-  .triangle::after {
-    right: 6%;
-    transform-origin: bottom right;
-    transform: skewY(-10deg); } }
+.triangle {
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .triangle::before, .triangle::after {
+      width: 45%;
+      height: 105px;
+      position: absolute;
+      content: "";
+      bottom: 0;
+      background: #ffffff;
+      z-index: 3; } }
+  @media screen and (min-width: 768px) {
+    .triangle::before {
+      left: 6%;
+      transform-origin: bottom left;
+      transform: skewY(10deg); } }
+  @media screen and (min-width: 768px) {
+    .triangle::after {
+      right: 6%;
+      transform-origin: bottom right;
+      transform: skewY(-10deg); } }
