@@ -20,7 +20,7 @@
         position: relative;
         z-index: 3;
         @media screen and (min-width: 768px) {
-            padding-top: 62px;
+            padding-top: 59px;
             padding-bottom:50px;
         }
     }
@@ -51,13 +51,12 @@
         position: absolute;
         content: "";
         width: 55%;
-        height: 24px;
+        height: 53px;
         bottom: 0;
         background-color: $white;
-        padding-bottom:27px;
         z-index: 2;
         @media screen and (min-width:768px) {
-            padding-bottom:0;
+            height: 29px;
         }
     }
     &__greeting::after {
@@ -75,9 +74,8 @@
         position: absolute;
         content: "";
         width: 55%;
-        height: 24px;
+        height: 53px;
         bottom: 0;
-        padding-bottom: 29px;
         background-color: $blue;
         z-index: 2;
         @media screen and (min-width:768px) {

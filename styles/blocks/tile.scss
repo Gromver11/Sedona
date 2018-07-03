@@ -23,11 +23,11 @@
     &__text {
         background-color: $blue;
         text-align: center;
-        padding: 41px 0;
+        padding: 37px 0;
         color: $white;
         @media screen and (min-width: 768px) {
-            width:33%;
-            padding: 48px 0;
+            width:33.33%;
+            padding: 46px 0;
         }
         @media screen and (min-width:1280px) {
             padding: 60px 0;
@@ -41,8 +41,11 @@
     &__number {
         display: block;
         text-align: center;
-        margin-bottom: 19px;
-        margin-top: 11px;
+        margin-bottom: 21px;
+        margin-top: 12px;
+    @media screen and (min-width:768px) {
+        margin-bottom: 26px;
+    }   
     }
     &__photo {
         background-repeat: no-repeat;
@@ -55,7 +58,7 @@
     }
     &__photo--city {
         background-image: url("img/city.jpg");
-        height: 257px;
+        height: 259px;
         @media screen and (min-width: 768px) {
             background-image: url("img/city-tab.jpg");
             height: 255px;
@@ -66,7 +69,7 @@
     }
     &__photo--bridge {
         background-image: url("img/bridge.jpg");
-        height: 257px;
+        height: 260px;
         @media screen and (min-width: 768px) {
             background-image: url("img/bridge-tab.jpg");
             height: 255px;
@@ -95,7 +98,7 @@
         z-index: 3;
         padding-top: 15px;
         @media screen and (min-width: 768px) {
-            padding-top: 48px;
+            padding-top: 46px;
         }
     }
     &__number--component {

@@ -36,8 +36,7 @@
     .menu__list {
       flex-direction: row;
       font-size: 14px;
-      line-height: 1.9;
-      align-items: center; } }
+      line-height: 1.9; } }
 
 .menu__item {
   background-color: #81b3d2;
@@ -49,7 +48,8 @@
     .menu__item {
       width: 20%;
       background-color: #ffffff;
-      border: none; } }
+      border: none;
+      padding: 14px 0; } }
 
 .menu__link {
   text-decoration: none;
@@ -322,7 +322,7 @@
   z-index: 3; }
   @media screen and (min-width: 768px) {
     .intro__description {
-      padding-top: 62px;
+      padding-top: 59px;
       padding-bottom: 50px; } }
 
 .intro__description--additional {
@@ -349,14 +349,13 @@
   position: absolute;
   content: "";
   width: 55%;
-  height: 24px;
+  height: 53px;
   bottom: 0;
   background-color: #ffffff;
-  padding-bottom: 27px;
   z-index: 2; }
   @media screen and (min-width: 768px) {
     .intro__greeting::before, .intro__greeting::after {
-      padding-bottom: 0; } }
+      height: 29px; } }
 
 .intro__greeting::after {
   right: 0;
@@ -372,9 +371,8 @@
   position: absolute;
   content: "";
   width: 55%;
-  height: 24px;
+  height: 53px;
   bottom: 0;
-  padding-bottom: 29px;
   background-color: #81b3d2;
   z-index: 2; }
   @media screen and (min-width: 768px) {
@@ -416,7 +414,7 @@
   @media screen and (min-width: 768px) {
     .rubric__item {
       display: block;
-      width: 33%;
+      width: 33.33%;
       margin-bottom: 0;
       text-align: center; } }
 
@@ -534,12 +532,12 @@
 .tile__text {
   background-color: #81b3d2;
   text-align: center;
-  padding: 41px 0;
+  padding: 37px 0;
   color: #ffffff; }
   @media screen and (min-width: 768px) {
     .tile__text {
-      width: 33%;
-      padding: 48px 0; } }
+      width: 33.33%;
+      padding: 46px 0; } }
   @media screen and (min-width: 1280px) {
     .tile__text {
       padding: 60px 0; } }
@@ -551,8 +549,11 @@
 .tile__number {
   display: block;
   text-align: center;
-  margin-bottom: 19px;
-  margin-top: 11px; }
+  margin-bottom: 21px;
+  margin-top: 12px; }
+  @media screen and (min-width: 768px) {
+    .tile__number {
+      margin-bottom: 26px; } }
 
 .tile__photo {
   background-repeat: no-repeat;
@@ -565,7 +566,7 @@
 
 .tile__photo--city {
   background-image: url("img/city.jpg");
-  height: 257px; }
+  height: 259px; }
   @media screen and (min-width: 768px) {
     .tile__photo--city {
       background-image: url("img/city-tab.jpg");
@@ -576,7 +577,7 @@
 
 .tile__photo--bridge {
   background-image: url("img/bridge.jpg");
-  height: 257px; }
+  height: 260px; }
   @media screen and (min-width: 768px) {
     .tile__photo--bridge {
       background-image: url("img/bridge-tab.jpg");
@@ -605,7 +606,7 @@
   padding-top: 15px; }
   @media screen and (min-width: 768px) {
     .tile__text--triangle {
-      padding-top: 48px; } }
+      padding-top: 46px; } }
 
 .tile__number--component {
   margin-bottom: 17px;
@@ -624,7 +625,7 @@
   padding-top: 28px; }
   @media screen and (min-width: 768px) {
     .theme__component {
-      width: 33%;
+      width: 33.33%;
       padding-top: 0; } }
 
 .theme__components {

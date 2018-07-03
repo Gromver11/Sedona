@@ -14,7 +14,6 @@
             flex-direction: row;
             font-size: 14px;
             line-height: 1.9;
-            align-items: center;
         }
     }
     &__item {
@@ -27,6 +26,7 @@
             width: 20%;
             background-color: $white;
             border: none;
+            padding: 14px 0;
         }
     }
     &__link {
