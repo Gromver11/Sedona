@@ -16,12 +16,12 @@
     &__description {
         text-align: center;
         padding-top: 40px;
-        padding-bottom:67px;
+        padding-bottom: 67px;
         position: relative;
         z-index: 3;
         @media screen and (min-width: 768px) {
             padding-top: 59px;
-            padding-bottom:50px;
+            padding-bottom: 50px;
         }
     }
     &__description--additional {
@@ -55,19 +55,28 @@
         bottom: 0;
         background-color: $white;
         z-index: 2;
-        @media screen and (min-width:768px) {
+        @media screen and (min-width: 768px) {
             height: 29px;
+        }
+        @media screen and (min-width:1200px) {
+            height: 53px;
         }
     }
     &__greeting::after {
         right: 0;
         transform-origin: bottom right;
         transform: skewY(-8deg);
+        @media screen and (min-width: 1280px) {
+            transform: skewY(-7deg)
+        }
     }
     &__greeting::before {
         left: 0;
         transform-origin: bottom left;
         transform: skewY(8deg);
+        @media screen and (min-width: 1280px) {
+            transform: skewY(7deg)
+        }
     }
     &__description::before,
     &__description::after {
@@ -78,7 +87,7 @@
         bottom: 0;
         background-color: $blue;
         z-index: 2;
-        @media screen and (min-width:768px) {
+        @media screen and (min-width: 768px) {
             display: none;
         }
     }
@@ -88,7 +97,7 @@
         transform: skewY(-8deg);
     }
     &__description::before {
-        left:0;
+        left: 0;
         transform-origin: bottom left;
         transform: skewY(8deg);
     }

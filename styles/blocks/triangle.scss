@@ -11,6 +11,10 @@
             background: $white;
             z-index: 3;
         }
+        @media screen and (min-width: 1200px) {
+            width: 40%;
+            height: 55px;
+        }
     }
     &::before {
         @media screen and (min-width: 768px) {
@@ -18,12 +22,20 @@
             transform-origin: bottom left;
             transform: skewY(7deg)
         }
+        @media screen and (min-width: 1200px) {
+            left: 21%;
+            transform: skewY(9deg)
+        }
     }
     &::after {
         @media screen and (min-width: 768px) {
             right: 4%;
             transform-origin: bottom right;
             transform: skewY(-7deg);
+        }
+        @media screen and (min-width: 1200px) {
+            right: 21%;
+            transform: skewY(-9deg);
         }
     }
 }

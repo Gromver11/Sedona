@@ -9,7 +9,7 @@
         @media screen and (min-width: 768px) {
             font-size: 21px;
             line-height: 1.2;
-            width: 150px;
+            width: 151px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -30,7 +30,7 @@
             padding: 46px 0;
         }
         @media screen and (min-width:1280px) {
-            padding: 60px 0;
+            padding: 55px 0;
         }
     }
     &__text--order {
@@ -99,6 +99,9 @@
         padding-top: 15px;
         @media screen and (min-width: 768px) {
             padding-top: 46px;
+        }
+        @media screen and (min-width: 1280px) {
+            padding-top: 53px;
         }
     }
     &__number--component {

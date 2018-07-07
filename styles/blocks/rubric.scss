@@ -73,10 +73,16 @@
         @media screen and (min-width: 768px) {
             width:195px;
         }
+        @media screen and (min-width: 1280px) {
+            width: 226px;
+        }
     }
     &__inner--width-m {
         @media screen and (min-width: 768px) {
             width:169px;
+        }
+        @media screen and (min-width: 1280px) {
+            width: 283px;
         }
     }
     &__icon--food {
@@ -100,6 +106,11 @@
             height: 71px;
             margin-bottom: 28px;
             margin-left: 12px;
+        }
+    }
+    &__content--new-line {
+        @media screen and (min-width: 1280px) {
+            display: block;
         }
     }
 }

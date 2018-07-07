@@ -37,15 +37,15 @@
         width: 247px;
         margin: 0 auto;
         @media screen and (min-width: 768px) {
-            width:160px;
+            width: 160px;
         }
         @media screen and (min-width: 1280px) {
-            width: 260px;
+            width: 267px;
         }
     }
     &__inner--size {
         @media screen and (min-width: 1280px) {
-            width:170px;
+            width: 209px;
         }
     }
 }

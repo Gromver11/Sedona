@@ -24,6 +24,10 @@
             display:flex;
             padding: 61px 0;
         }
+        @media screen and (min-width: 1280px) {
+            padding-top: 60px;
+            padding-bottom: 84px;
+        }
     }
     &__map {
         font-size: 0
