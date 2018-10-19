@@ -9,4 +9,40 @@
             align-items: center;
         }
     }
+    &__main {
+        display: block;
+        margin-top: 55px;
+        @media screen and (min-width: 768px) {
+            margin-top: 0;
+        }
+    }
+    &--opened {
+        .menu__list {
+            top: 0;
+        }
+        .site__main {
+            margin-top: 275px;
+            transition: margin-top .2s;
+            @media screen and (min-width: 768px) {
+                margin-top:0
+            }
+        }
+        .btn--close {
+            display: block;
+        }
+        .btn--open {
+            display: none;
+        }
+        .page-header__btn::before,
+        .page-header__btn::after {
+            display: block;
+        }
+        .page-header__logo {
+            top: 218px;
+            transition: top .3s;
+            @media screen and (min-width: 768px) {
+                top:0;
+            }
+        }
+    }
 }

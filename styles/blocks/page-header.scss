@@ -1,18 +1,16 @@
 .page-header {
     &__btn {
         position: absolute;
-        right: 15px;
+        right: 12px;
+        width: 32px;
+        height: 32px;
+        top: 12px;
         @media screen and (min-width: 768px) {
             display: none;
         }
     }
-    &__btn--cross {
-        width: 32px;
-        height: 32px;
-        top: 9px;
-    }
-    &__btn--cross::before,
-    &__btn--cross::after {
+    &__btn::before,
+    &__btn::after {
         content: "";
         position: absolute;
         width: 27px;
@@ -20,19 +18,29 @@
         right: 3px;
         top: 13px;
         background-color: $white;
+        display: none;
         @media screen and (min-width: 768px) {
             display:none;
         }
     }
-    &__btn--cross::before {
+    &__btn::before {
         transform: rotate(45deg);
     }
-    &__btn--cross::after {
+    &__btn::after {
         transform: rotate(-45deg);
     }
-    &__btn--burger {
-        width: 23px;
-        height: 23px;
-        top: 233px;
+    &__logo {
+        position: absolute;
+        top: 0;
+        right: 50%;
+        margin-right: -51px;
+        z-index: 2;
+        @media screen and (min-width: 1024px) {
+            margin-right:-94px;
+        }
+    }
+    &__btn:hover {
+        transform: scale(1.5);
+        transition: transform 0.8s;
     }
 }

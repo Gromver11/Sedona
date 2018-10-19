@@ -19,9 +19,18 @@
         left: 0;
     }
     &__line::before {
-        top: 1px;
+        top: 4px;
     }
     &__line::after {
-        top: 18px;
+        top: 22px;
+    }
+    &--close {
+        display: none;
+    }
+    &--open {
+        display: block;
+    @media screen and (min-width:768px) {
+        display: none;
+    }
     }
 }

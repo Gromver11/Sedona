@@ -43,9 +43,9 @@
         text-align: center;
         margin-bottom: 21px;
         margin-top: 12px;
-    @media screen and (min-width:768px) {
-        margin-bottom: 26px;
-    }   
+        @media screen and (min-width: 768px) {
+            margin-bottom: 26px;
+        }
     }
     &__photo {
         background-repeat: no-repeat;

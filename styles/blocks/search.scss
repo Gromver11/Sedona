@@ -60,4 +60,23 @@
             display: block;
         }
     }
+    &__modal {
+        position: absolute;
+        box-sizing: border-box;
+        background: $blue;
+        left: 50%;
+        height: 200px;
+        width: 300px;
+        margin-left: -150px;
+        top: 50px;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility, opacity, .5s;
+        @media screen and (min-width: 768px) {
+            width:500px;
+            height: 300px;
+            top: 60px;
+            margin-left: -250px;
+        }
+    }
 }
