@@ -169,10 +169,13 @@
                     </h1>
                     <form action="#" method="get" class="modal__form form">
                         <input type="text" name="search" placeholder="Введите дату в формате ДД-ММ-ГГГГ" class="form__field">
-                        <button type="submit" class="btn form__btn" data-toggl-target=".modal" data-togglr-remove="modal--open">
-                            <span class="visually-hidden">Искать</span>
+                        <button type="submit" class="btn form__btn">
+                            <span class="btn__text">Поиск</span>
                         </button>
                     </form>
+                        <button class="btn modal__btn" data-toggl-target=".modal" data-togglr-remove="modal--open">
+                            <span class="visually-hidden">Закрыть</span>
+                        </button>
                 </div>
             </div>
             <div class="main-content__map map">

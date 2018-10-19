@@ -33,4 +33,14 @@
         display: none;
     }
     }
+    &__text {
+        font: {
+            family: $general-font;
+            size: 14px;
+            weight: bold;
+        }
+        text-transform: uppercase;
+        color: $black;
+        line-height: 1;
+    }
 }

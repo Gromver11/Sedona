@@ -1,13 +1,14 @@
 .form {
     &__btn {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 30px;
         position: absolute;
-        right: 0px;
-        top: 0px;
+        background: $white;
+        right: 5px;
+        bottom: 5px;
         @media screen and (min-width: 768px) {
             right: 12px;
-            top: 12px;
+            bottom: 12px;
         }
     }
     &__field {
@@ -22,21 +23,5 @@
             size: 14px;
             weight: bold;
         }
-    }
-    &__btn::before,
-    &__btn::after {
-        content: "";
-        position: absolute;
-        width: 30px;
-        height: 5px;
-        right: 5px;
-        top: 18px;
-        background-color: $white;
-    }
-    &__btn::before {
-        transform: rotate(45deg);
-    }
-    &__btn::after {
-        transform: rotate(-45deg);
     }
 }
