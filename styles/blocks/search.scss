@@ -5,7 +5,6 @@
             family: $general-font;
             weight: bold;
         }
-        text-transform: uppercase;
         line-height: 1.2;
         text-align: center;
         margin-bottom: 21px;
@@ -13,19 +12,25 @@
         @media screen and (min-width:768px) {
             font-size: 30px;
             line-height: 0.9;
+            margin-bottom: 35px;
         }
     }
     &__text {
         font: {
-            size: 14px;
             family: $general-font;
         }
-        text-transform: uppercase;
         text-align: center;
         line-height: 1.7;
         margin-bottom: 37px;
         color:$tc;
         padding:0 20px;
+        @media screen and (min-width:768px) {
+            padding: 0;
+            margin-bottom: 41px;
+        }
+        @media screen and (min-width: 1280px) {
+            margin-bottom: 46px;
+        }
     }
     &__btn {
         padding-top: 16px;
@@ -36,7 +41,6 @@
         text-align: center;
         color: $white;
         text-decoration: none;
-        text-transform: uppercase;
         line-height: 1.2;
         margin-left: auto;
         margin-right: auto;
@@ -49,6 +53,30 @@
             width: 455px;
             margin-left: auto;
             margin-right: auto;
+        }
+    }
+    &__text--new-line {
+        @media screen and(min-width: 768px) {
+            display: block;
+        }
+    }
+    &__modal {
+        position: absolute;
+        box-sizing: border-box;
+        background: $blue;
+        left: 50%;
+        height: 200px;
+        width: 300px;
+        margin-left: -150px;
+        top: 50px;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility, opacity, .5s;
+        @media screen and (min-width: 768px) {
+            width:500px;
+            height: 300px;
+            top: 60px;
+            margin-left: -250px;
         }
     }
 }

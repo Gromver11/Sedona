@@ -1,4 +1,4 @@
-.square {
+.component {
     &__title {
         font: {
             family: $general-font;
@@ -7,27 +7,45 @@
         }
         line-height: 1.4;
         color: $black;
-        text-transform: uppercase;
-        margin-bottom: 11px;
         text-align: center;
         @media screen and (min-width:768px) {
             font-size: 21px;
             line-height: 1.2;
         }
+        @media screen and(min-width:1280px) {
+            width: 150px;
+            margin: 0 auto;
+        }
     }
     &__text {
         font: {
             family: $general-font;
-            size: 14px;
         }
-        text-transform: uppercase;
         border-bottom: 1px solid $border;
         text-align: center;
         line-height: 1.5;
-        padding-bottom: 26px;
+        padding-bottom: 27px;
         @media screen and (min-width:768px) {
             border: none;
             padding-bottom: 0;
+        }
+    }
+    &__text--tourist {
+        border-bottom: none;
+    }
+    &__inner {
+        width: 247px;
+        margin: 0 auto;
+        @media screen and (min-width: 768px) {
+            width: 160px;
+        }
+        @media screen and (min-width: 1280px) {
+            width: 267px;
+        }
+    }
+    &__inner--size {
+        @media screen and (min-width: 1280px) {
+            width: 209px;
         }
     }
 }

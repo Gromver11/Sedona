@@ -1,24 +1,43 @@
 .page-header {
-    &__menu {
-        position: relative;
+    &__btn {
+        position: absolute;
+        right: 12px;
+        width: 32px;
+        height: 32px;
+        top: 12px;
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
     }
-    &__menu::before,
-    &__menu::after {
+    &__btn::before,
+    &__btn::after {
         content: "";
         position: absolute;
         width: 27px;
         height: 5px;
-        right: 18px;
-        top: 24px;
+        right: 3px;
+        top: 13px;
         background-color: $white;
+        display: none;
         @media screen and (min-width: 768px) {
             display:none;
         }
     }
-    &__menu::after {
+    &__btn::before {
+        transform: rotate(45deg);
+    }
+    &__btn::after {
         transform: rotate(-45deg);
     }
-    &__menu::before {
-        transform: rotate(45deg);
+    &__logo {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+    &__btn:hover {
+        transform: scale(1.5);
+        transition: transform 0.8s;
     }
 }

@@ -6,7 +6,7 @@
         background-color: $blue;
         text-decoration: none;
         font-size: 0;
-        margin-right: 2px;
+        margin-right: 6px;
         background-repeat: no-repeat;
         background-position: 50% 50%;
         vertical-align: top;
@@ -21,6 +21,6 @@
         background-image: url("img/icon-facebook.svg");
     }
     &__btn:last-child {
-        margin-right:0;
+        margin-right: 0;
     }
 }

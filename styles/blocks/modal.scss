@@ -1,0 +1,56 @@
+.modal {
+    @media screen and (min-width: 1280px) {
+        padding: 56px 30px;
+    }
+    @media screen and (min-width:768px) {
+        padding: 67px 25px;
+    }
+    padding: 35px 12px;
+    &__title {
+        font: {
+            size: 21px;
+            family: $general-font;
+            weight: bold;
+        }
+        text-align: center;
+        line-height: 1.2;
+        color: $white;
+        margin-bottom: 30px;
+    }
+    &__form {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__btn {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        @media screen and (min-width: 768px) {
+            right: 12px;
+            top: 12px;
+        }
+    }
+    &__btn::before,
+    &__btn::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 5px;
+        right: 5px;
+        top: 18px;
+        background-color: $white;
+    }
+    &__btn::before {
+        transform: rotate(45deg);
+    }
+    &__btn::after {
+        transform: rotate(-45deg);
+    }
+    &--open {
+        opacity: 1;
+        visibility: visible;
+        transition: 1s;
+    }
+}

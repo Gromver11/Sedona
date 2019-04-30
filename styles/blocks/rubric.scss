@@ -1,0 +1,116 @@
+.rubric {
+    &__title {
+        font: {
+            size: 18px;
+            family: $general-font;
+            weight: bold;
+        }
+        line-height: 1.4;
+        margin-bottom:14px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 22px;
+            font-size: 21px;
+            line-height: 1.2;
+        }
+    }
+    &__content {
+        font: {
+            family: $general-font;
+        }
+        line-height:1.5;
+        @media screen and (min-width:768px) {
+            padding: 0;
+        }
+    }
+    &__item {
+        display: flex;
+        margin-bottom: 20px;
+        @media screen and (min-width: 768px) {
+            display:block;
+            width: 33.33%;
+            margin-bottom: 0;
+            text-align: center;
+        }
+    }
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+    &__icon {
+        vertical-align: top;
+        margin-right: 4px;
+        width: 47px;
+        height: 37px;
+        @media screen and (min-width: 768px) {
+            margin-right: 0;
+        }
+    }
+    &__item:nth-child(3) {
+        @media screen and (min-width: 768px) {
+            order: 2;
+        }
+    }
+    &__item:nth-child(2) {
+        @media screen and (min-width: 768px) {
+            order: 3;
+        }
+    }
+    &__inner {
+        @media screen and (min-width: 768px) {
+            width:165px;
+            margin: 0 auto;
+        }
+        @media screen and (min-width:1280px) {
+            width: 260px;
+        }
+    }
+    &__text {
+        margin-top: 9px;
+        @media screen and (min-width: 768px) {
+            margin-top: 0;
+        }
+    }
+    &__inner--width-b {
+        @media screen and (min-width: 768px) {
+            width:195px;
+        }
+        @media screen and (min-width: 1280px) {
+            width: 226px;
+        }
+    }
+    &__inner--width-m {
+        @media screen and (min-width: 768px) {
+            width:169px;
+        }
+        @media screen and (min-width: 1280px) {
+            width: 283px;
+        }
+    }
+    &__icon--food {
+        @media screen and (min-width: 768px) {
+            width: 73px;
+            height: 77px;
+            margin-bottom: 21px;
+            margin-left: 6px;
+        }
+    }
+    &__icon--house {
+        @media screen and (min-width: 768px) {
+            width:69px;
+            height: 74px;
+            margin-bottom: 25px;
+        }
+    }
+    &__icon--gift {
+        @media screen and (min-width: 768px) {
+            width: 65px;
+            height: 71px;
+            margin-bottom: 28px;
+            margin-left: 12px;
+        }
+    }
+    &__content--new-line {
+        @media screen and (min-width: 1280px) {
+            display: block;
+        }
+    }
+}

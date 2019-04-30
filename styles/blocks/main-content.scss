@@ -1,21 +1,36 @@
 .main-content {
     &__search {
-        margin-bottom: 48px;
+        position: relative;
+        margin-bottom: 50px;
         @media screen and (min-width: 768px) {
             width:455px;
             margin-left: auto;
             margin-right: auto;
+            margin-bottom: 55px;
         }
     }
-    &__advantage {
-        margin-bottom: 30px;
+    &__theme {
+        margin-bottom: 26px;
+        @media screen and (min-width: 768px) {
+            margin-bottom:55px;
+        }
     }
-    &__perspective {
+    &__rubric {
         list-style: none;
-        padding: 38px 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 28px;
+        padding-bottom: 36px;
         @media screen and (min-width: 768px) {
             display:flex;
-            padding: 65px 0;
+            padding: 61px 0;
         }
+        @media screen and (min-width: 1280px) {
+            padding-top: 60px;
+            padding-bottom: 84px;
+        }
+    }
+    &__map {
+        font-size: 0;
     }
 }

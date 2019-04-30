@@ -1,0 +1,46 @@
+.btn {
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    &__line {
+        width: 23px;
+        height: 4px;
+        display: block;
+        background-color: $blue;
+    }
+    &__line::before,
+    &__line::after {
+        position: absolute;
+        content: "";
+        width: 23px;
+        height: 4px;
+        background-color: $blue;
+        left: 0;
+    }
+    &__line::before {
+        top: 4px;
+    }
+    &__line::after {
+        top: 22px;
+    }
+    &--close {
+        display: none;
+    }
+    &--open {
+        display: block;
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+    }
+    &__text {
+        font: {
+            family: $general-font;
+            size: 14px;
+            weight: bold;
+        }
+        text-transform: uppercase;
+        color: $black;
+        line-height: 1;
+    }
+}

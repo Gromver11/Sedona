@@ -1,0 +1,27 @@
+.form {
+    &__btn {
+        width: 60px;
+        height: 30px;
+        position: absolute;
+        background: $white;
+        right: 5px;
+        bottom: 5px;
+        @media screen and (min-width: 768px) {
+            right: 12px;
+            bottom: 12px;
+        }
+    }
+    &__field {
+        border: 0;
+        outline: 0;
+        box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.75), inset 0px -1px 2px 0px rgba(0, 0, 0, 0.75);
+        padding: 15px 20px;
+        box-sizing: border-box;
+        width: 100%;
+        font: {
+            family: $general-font;
+            size: 14px;
+            weight: bold;
+        }
+    }
+}
