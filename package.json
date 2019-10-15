@@ -20,9 +20,6 @@
     "url": "https://github.com/Gromver11/Sedona/issues"
   },
   "homepage": "https://github.com/Gromver11/Sedona#readme",
-  "dependencies": {
-    "togglr": "^1.0.0"
-  },
   "devDependencies": {
     "autoprefixer": "^7.2.4",
     "browser-sync": "^2.18.13",
